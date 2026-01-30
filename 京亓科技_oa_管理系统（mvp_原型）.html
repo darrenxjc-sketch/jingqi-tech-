@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>京亓科技 OA 系统</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<!-- Login Page -->
+<div class="min-h-screen flex items-center justify-center">
+  <div class="bg-white w-full max-w-md p-8 rounded-xl shadow">
+    <h1 class="text-2xl font-bold mb-6 text-center">京亓科技 OA 登录</h1>
+    <form class="space-y-4">
+      <div>
+        <label class="block text-sm mb-1">账号</label>
+        <input type="text" class="w-full border rounded px-3 py-2" placeholder="请输入工号或邮箱" />
+      </div>
+      <div>
+        <label class="block text-sm mb-1">密码</label>
+        <input type="password" class="w-full border rounded px-3 py-2" placeholder="请输入密码" />
+      </div>
+      <button type="button" class="w-full bg-blue-600 text-white py-2 rounded-lg font-medium">登录系统</button>
+    </form>
+    <p class="text-xs text-gray-400 mt-4 text-center">仅限公司内部人员使用</p>
+  </div>
+</div>
+
+<!-- Dashboard (示意，登录后) -->
+<div class="hidden">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-900 text-gray-200 p-6">
+      <h2 class="text-lg font-bold mb-8">京亓科技 OA</h2>
+      <nav class="space-y-3 text-sm">
+        <a class="block hover:text-white">首页总览</a>
+        <a class="block hover:text-white">项目管理</a>
+        <a class="block hover:text-white">标注任务</a>
+        <a class="block hover:text-white">质量审核</a>
+        <a class="block hover:text-white">人员 / 工时</a>
+        <a class="block hover:text-white">审批流程</a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="flex-1 p-8">
+      <h3 class="text-xl font-bold mb-6">管理首页</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <p class="text-sm text-gray-500">进行中项目</p>
+          <p class="text-2xl font-bold mt-2">6</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <p class="text-sm text-gray-500">待质检任务</p>
+          <p class="text-2xl font-bold mt-2">128</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <p class="text-sm text-gray-500">今日完成量</p>
+          <p class="text-2xl font-bold mt-2">3,420</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+</body>
+</html>
